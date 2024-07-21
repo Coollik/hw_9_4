@@ -1,4 +1,4 @@
-
+from math import pi
 
 def test_greeting():
     """
@@ -7,7 +7,8 @@ def test_greeting():
     name = "Анна"
     age = 25
     # TODO Сформируйте нужную строку
-    output = ""
+    # output = "Привет, " + str(name) + "! Тебе " + str(age) + " лет."
+    output = f"Привет, {name}! Тебе {age} лет."
 
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
@@ -21,12 +22,12 @@ def test_rectangle():
     a = 10
     b = 20
     # TODO сосчитайте периметр
-    perimeter = 0
+    perimeter = (a + b) * 2
 
     assert perimeter == 60
 
     # TODO сосчитайте площадь
-    area = 0
+    area = a * b
 
     assert area == 200
 
