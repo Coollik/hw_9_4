@@ -1,3 +1,4 @@
+import random
 from math import pi
 from random import randint
 def test_greeting():
@@ -55,6 +56,20 @@ def test_random_list():
     """
     # TODO создайте список
     l = []
+    r = random.randint(1, 101)
+    l.append(r)
+    l.append(r)
+    l.append(r)
+    l.append(r)
+    l.append(r)
+    l.append(r)
+    l.append(r)
+    l.append(r)
+    l.append(r)
+    l.append(r)
+
+    list.sort(l)
+
 
 
     assert len(l) == 10
@@ -83,7 +98,8 @@ def test_dicts():
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
-    d = {}
+    d = dict(zip(first, second)
+
 
     assert isinstance(d, dict)
     assert len(d) == 5
